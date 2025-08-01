@@ -1,0 +1,24 @@
+h1 {
+  font-weight: 700;
+  color: rgb(44, 62, 80);
+}
+input{
+  border-top: none ;
+  border-right: none ;
+  border-left: none ;
+  padding: 15px;
+}
+
+input:focus{
+  box-shadow: none;
+  border-color: #1ABC9C;
+}
+
+.form-btn{
+  background-color: #1ABC9C;
+  color: white;
+  border: #1ABC9C;
+}
+.form-btn:active{
+  color: #1ABC9C;
+}

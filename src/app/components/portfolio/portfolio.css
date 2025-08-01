@@ -1,0 +1,48 @@
+h1 {
+  font-weight: 700;
+  color: rgb(44, 62, 80);
+}
+.overlay {
+  background-color: #1abc9c;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+.overlay i {
+  color: white;
+  font-size: 96px;
+}
+.overlay:hover {
+  opacity: 0.9;
+}
+.selected-img {
+  background-color: rgba(44, 62, 80 , .6);
+  z-index: 1000;
+  cursor: pointer;
+}
+.img {
+  z-index: 1100;
+  width: 350px;
+  height: 300px;
+}
+.img i{
+  cursor: pointer;
+}
+
+
+
+
+@media all and (min-width:576px) {
+   .img {
+  width: 500px;
+  height: 350px;
+}
+}
+@media all and (min-width:991px) {
+   .img {
+   width: 550px;
+  height: 400px;
+}
+}
+
+

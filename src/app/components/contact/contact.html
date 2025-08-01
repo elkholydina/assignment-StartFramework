@@ -1,0 +1,28 @@
+<section class="py-5 mb-5">
+  <div class="container">
+    <h1 class="text-uppercase text-center">contact section</h1>
+
+    <app-starline
+      [starLineStyle]="{
+        lineColor: 'background-color:#2C3E50',
+        starStyle: 'color:#2C3E50;background-color: white',
+      }"
+    >
+    </app-starline>
+
+    <div class="form mt-5 pt-5 w-50 m-auto">
+      @for (input of inputs; track $index) {
+        <div class="mb-4">
+        <input
+          [type]="input.type"
+          class="form-control"
+          [placeholder]="input.placeholder"
+        />
+      </div>
+      }
+      <div class="mb-4">
+        <button type="submit" class="btn form-btn">send message</button>
+      </div>
+    </div>
+  </div>
+</section>

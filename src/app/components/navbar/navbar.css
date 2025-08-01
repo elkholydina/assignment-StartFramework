@@ -1,0 +1,38 @@
+.navbar{
+  background-color: #2C3E50 !important;
+  z-index: 999;
+  transition: all .5s;
+}
+.navbar-brand{
+  font-weight: 700;
+  font-size: 24px;
+}
+.nav-link{
+  font-weight: 700;
+  font-size: 16px;
+}
+.active{
+  background-color: #1ABC9C;
+  border-radius: 5px;
+}
+
+@media all and (min-width:576px) {
+  .navbar-brand{
+    font-size: 26px;
+   }
+}
+@media all and (min-width:767px) {
+  .navbar-brand{
+    font-size: 28px;
+   }
+}
+@media all and (min-width:991px) {
+  .navbar-brand{
+    font-size: 30px;
+   }
+}
+@media all and (min-width:1200px) {
+  .navbar-brand{
+    font-size: 32px;
+   }
+}

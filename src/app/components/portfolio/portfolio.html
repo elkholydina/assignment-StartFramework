@@ -1,0 +1,36 @@
+<section class="py-5 mb-5">
+  <div class="container">
+    <h1 class="text-uppercase text-center">portfolio component</h1>
+
+    <app-starline
+      [starLineStyle]="{
+        lineColor: 'background-color:#2C3E50',
+        starStyle: 'color:#2C3E50;background-color: white',
+      }"
+    ></app-starline>
+
+    <div class="row g-5">
+      @for(img of imgs ; track $index){
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="inner rounded-3 overflow-hidden position-relative">
+          <img [src]="img" alt="portfolio image" class="w-100" />
+          <div
+            class="overlay position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center" (click)="showImg(img , $index)"
+          >
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+</section>
+
+<div class="selected-img position-fixed top-0 bottom-0 start-0 end-0" [class.d-none]="!isImageShown" (click)="closeImg()">
+      <div class="img position-absolute top-50 start-50 translate-middle text-white fs-2" (click)="$event.stopPropagation()">
+        <img [src]="imgSrc" alt="portfolio image" class="w-100 h-100">
+        <i class="fa-solid fa-circle-xmark position-absolute top-0 end-0 m-2" (click)="closeImg()"></i>
+        <i class="fa-solid fa-angle-left  position-absolute top-50 start-0 translate-middle-y m-2" (click)="prevImg()"></i>
+        <i class="fa-solid fa-angle-right  position-absolute top-50 end-0 translate-middle-y m-2" (click)="nextImg()"></i>
+      </div>
+  </div>

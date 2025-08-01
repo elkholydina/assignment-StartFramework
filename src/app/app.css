@@ -1,0 +1,26 @@
+.navbar-margin {
+  margin-bottom: 94px;
+}
+
+@media all and (min-width: 576px) {
+  .navbar-margin {
+    margin-bottom: 97px;
+  }
+}
+@media all and (min-width: 767px) {
+  .navbar-margin {
+    margin-bottom: 100px;
+  }
+}
+@media all and (min-width: 991px) {
+  .navbar-margin {
+    margin-bottom: 103px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .navbar-margin {
+    margin-bottom: 106px;
+  }
+}
+
+
